@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.jpg" />
+		<meta name="description" content="ZayTaWan" />
+		<meta name="keywords" content="ZayTaWan" />
+		<meta name="author" content="Miracle" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>ဇေတဝန်ဆေးတိုက်</title>
+		%sveltekit.head%
+		<style>
+			* {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+			}
+			body {
+				font-family: 'Myanmar Sans Pro', sans-serif;
+			}
+			.hidden {
+				width: 100vw;
+				height: 100vh;
+				justify-content: center;
+				align-items: center;
+				color: red;
+				font-size: 48px;
+				font-weight: bold;
+				display: none;
+			}
+			@media only screen and (min-width: 768px) {
+				.root {
+					display: none;
+				}
+				.hidden {
+					display: flex;
+				}
+				.hidden-text {
+					width: 80%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="root">%sveltekit.body%</div>
+		<div class="hidden">
+			<div class="hidden-text">Viewport over 768px does not support right now!</div>
+		</div>
+	</body>
+</html>
