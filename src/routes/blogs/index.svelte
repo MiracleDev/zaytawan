@@ -1,4 +1,26 @@
+<script context="module">
+	export async function load({ fetch }) {
+		const res = await fetch('/blogs.json');
+		const { blogs } = await res.json();
+		console.log(blogs);
+
+		if (res.ok) {
+			return {
+				props: {
+					blogs
+				}
+			};
+		}
+
+		return {
+			status: res.status,
+			error: new Error('Could not fetch the blogs')
+		};
+	}
+</script>
+
 <script>
+	export let blogs;
 	let toggle = false;
 
 	const open = () => {
@@ -11,13 +33,13 @@
 </script>
 
 <div>
-	<div class="sidenav" style={toggle ? 'width: 100%' : 'width: 0'}>
+  <div class="sidenav" style={toggle ? 'width: 100%' : 'width: 0'}>
 		<div class="closebtn" on:click={close}>
 			<img src="/images/times-solid.svg" alt="closebtn">
 		</div>
 		<a href="/">မူလစာမျက်နှာသို့</a>
-		<a href="/contact-us" on:click={close}>ဆက်သွယ်ရန်</a>
-		<a href="/blogs">ဘလော့ဖတ်ရန်</a>
+		<a href="/contact-us">ဆက်သွယ်ရန်</a>
+		<a href="/blogs" on:click={close}>ဘလော့ဖတ်ရန်</a>
 	</div>
 	<nav class="navbar">
 		<div class="contact-info">
@@ -53,6 +75,25 @@
 			<a href="tel:+959798646151" class="contact-btn">ဖုန်းခေါ်ဆိုရန်</a>
 		</div>
 	</nav>
+	<main class="main-content">
+		<div class="blogs-post">
+			{#each blogs as blog}
+				<a class="blog-wrapper" sveltekit:prefetch href={`/blogs/${blog.id}`}>
+					<div class="blog-img">
+						<img src={blog.imgUrl} alt="" />
+					</div>
+					<hr class="break-line" />
+					<div class="blog-title">
+						{blog.title}
+					</div>
+					<div class="blog-intro">
+						{blog.intro}
+					</div>
+					<hr class="break-line" />
+				</a>
+			{/each}
+		</div>
+	</main>
 	<footer class="footer-content">
 		<div class="footer-wrapper">
 			<div class="logo-alt">
@@ -97,7 +138,7 @@
 </div>
 
 <style>
-	.sidenav {
+  .sidenav {
 		height: 100%;
 		width: 0;
 		position: fixed;
@@ -142,6 +183,11 @@
 		width: 24px;
 		height: 24px;
 		object-fit: cover;
+	}
+  .break-line {
+		border: none;
+		border-bottom: 6px solid #91c1cc;
+		width: 100%;
 	}
 	.contact-info {
 		width: 100%;
@@ -264,7 +310,39 @@
 	.contact-btn:hover {
 		background-color: #90b3bb;
 	}
-
+	.blog-wrapper {
+		display: flex;
+		flex-direction: column;
+		cursor: pointer;
+		transition: 0.3s;
+	}
+	.blog-wrapper:hover {
+		filter: brightness(80%);
+	}
+	.blog-img {
+		width: 100%;
+		height: 50vw;
+	}
+	.blog-img img {
+		width: 100%;
+		height: 50vw;
+		object-fit: cover;
+	}
+	.blog-title {
+		margin-top: 48px;
+		margin-right: 16px;
+		margin-left: 16px;
+		font-size: 32px;
+		color: #91c1cc;
+	}
+	.blog-intro {
+		margin-right: 16px;
+		margin-left: 16px;
+		margin-top: 16px;
+		margin-bottom: 48px;
+		font-size: 20px;
+		color: black;
+	}
 	.footer-wrapper {
 		padding: 48px 32px;
 		background-color: #5b5151;
