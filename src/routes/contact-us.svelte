@@ -364,7 +364,7 @@
 		width: 100%;
 	}
 	.contact-submit {
-		padding: 12px 64px;
+		padding: 12px 48px;
 		color: white;
 		background-color: #91c1cc;
 		font-size: 20px;
