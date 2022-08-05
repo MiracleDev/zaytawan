@@ -3,17 +3,17 @@
 
 	const open = () => {
 		toggle = true;
-	}
+	};
 
 	const close = () => {
 		toggle = false;
-	}
+	};
 </script>
 
 <div>
 	<div class="sidenav" style={toggle ? 'width: 100%' : 'width: 0'}>
 		<div class="closebtn" on:click={close}>
-			<img src="/images/times-solid.svg" alt="closebtn">
+			<img src="/images/times-solid.svg" alt="closebtn" />
 		</div>
 		<a href="/">မူလစာမျက်နှာသို့</a>
 		<a href="/contact-us" on:click={close}>ဆက်သွယ်ရန်</a>
@@ -25,13 +25,13 @@
 				<div class="ph-no-icon">
 					<img src="/images/phone.svg" alt="phone-icon" />
 				</div>
-				<div class="ph-no-text">၀၉-၇၉၈၆၄၆၁၅၁</div>
+				<a class="ph-no-text" href="tel:+959798646151">၀၉-၇၉၈၆၄၆၁၅၁</a>
 			</div>
 			<div class="email">
 				<div class="email-icon">
 					<img src="/images/echo.svg" alt="email-icon" />
 				</div>
-				<div class="email-text">testing@gmail.com</div>
+				<a class="email-text" href="mailto: testing@gmail.com">testing@gmail.com</a>
 			</div>
 		</div>
 		<div class="heading-content">
@@ -53,6 +53,55 @@
 			<a href="tel:+959798646151" class="contact-btn">ဖုန်းခေါ်ဆိုရန်</a>
 		</div>
 	</nav>
+	<main class="main-content">
+		<form class="contact-form">
+			<div class="contact-form-heading">
+				ဇေတဝန်ဆေးတိုက်က<br />ဆေးတွေအကြောင်းပိုမိုသိရှိလိုပါက
+			</div>
+			<div class="contact-form-intro">
+				ဇေတဝန်ဆေးတိုက်ကဆေးတွေကအရည်သွေးကောင်းမွန်ပြီးဆေးစွမ်းထက်တာအာမခံပါတယ်။ထုတ်ပိုးမှုမှာလဲလှပသေသပ်ပါတယ်။အခုဘဲဖုန်းခေါ်ဆိုပြီးဝယ်ယူအားပေးလို့ရပါပြီနော်။
+			</div>
+			<div class="contact-info-wrapper">
+				<div class="contact-info-alt">
+					<div class="contact-icon">
+						<img src="/images/location.svg" alt="" />
+					</div>
+					<div class="contact-text-alt">
+						ပင်ရင်း တ၂/၄၊၆၃လမ်း၆၄လမ်းကြား၊၁၀၂လမ်း(ယခင်ပိတောက်လမ်း)၊ မြို့သစ်၊မန္တလေးမြို့။
+					</div>
+				</div>
+				<a href="tel:+959798646151" class="contact-info-alt">
+					<div class="contact-icon">
+						<img src="/images/phone-alt.svg" alt="" />
+					</div>
+					<div class="contact-text-alt">၀၉-၇၉၈၆၄၆၁၅၁</div>
+				</a>
+				<a href="mailto:testing@gmail.com" class="contact-info-alt">
+					<div class="contact-icon">
+						<img src="/images/echo-alt.svg" alt="" />
+					</div>
+					<div class="contact-text-alt">testing@gmail.com</div>
+				</a>
+				<a
+					href="https://www.facebook.com/dawmyanwezaytawon"
+					target="_blank"
+					class="contact-info-alt"
+				>
+					<div class="contact-icon">
+						<img src="/images/message.svg" alt="" />
+					</div>
+					<div class="contact-text-alt">Facebook</div>
+				</a>
+			</div>
+			<input class="contact-input" type="text" placeholder="သင့်နာမည်" required />
+			<input class="contact-input" type="email" placeholder="သင့်gmail" required />
+			<input class="contact-input" type="text" placeholder="သင့်ဖုန်းနံပါတ်" required />
+			<textarea class="contact-textarea" required placeholder="သင်ပြောချင်သောစကား" />
+			<div class="submit-wrapper">
+				<button class="contact-submit" type="submit" value="Submit">စာပို့ရန်</button>
+			</div>
+		</form>
+	</main>
 	<footer class="footer-content">
 		<div class="footer-wrapper">
 			<div class="logo-alt">
@@ -73,24 +122,24 @@
 					ပင်ရင်း တ၂/၄၊၆၃လမ်း၆၄လမ်းကြား၊၁၀၂လမ်း(ယခင်ပိတောက်လမ်း)၊ မြို့သစ်၊မန္တလေးမြို့။
 				</div>
 			</div>
-			<div class="contact-info-alt">
+			<a href="tel:+959798646151" class="contact-info-alt">
 				<div class="contact-icon">
 					<img src="/images/phone-alt.svg" alt="" />
 				</div>
 				<div class="contact-text">၀၉-၇၉၈၆၄၆၁၅၁</div>
-			</div>
-			<div class="contact-info-alt">
+			</a>
+			<a href="mailto:testing@gmail.com" class="contact-info-alt">
 				<div class="contact-icon">
 					<img src="/images/echo-alt.svg" alt="" />
 				</div>
 				<div class="contact-text">testing@gmail.com</div>
-			</div>
-			<div class="contact-info-alt">
+			</a>
+			<a href="https://www.facebook.com/dawmyanwezaytawon" target="_blank" class="contact-info-alt">
 				<div class="contact-icon">
 					<img src="/images/message.svg" alt="" />
 				</div>
 				<div class="contact-text">Facebook</div>
-			</div>
+			</a>
 		</div>
 		<div class="copyright">Design & Developed by MiracleDev</div>
 	</footer>
@@ -111,8 +160,8 @@
 		text-align: center;
 		transition: 0.3s;
 		background-color: #91c1cc;
-    	background-image: url(/images/waves.webp);
-    	background-blend-mode: lighten;
+		background-image: url(/images/waves.webp);
+		background-blend-mode: lighten;
 	}
 
 	.sidenav a {
@@ -138,7 +187,7 @@
 		margin-left: 50px;
 		cursor: pointer;
 	}
-	.closebtn img{
+	.closebtn img {
 		width: 24px;
 		height: 24px;
 		object-fit: cover;
@@ -176,6 +225,8 @@
 	.ph-no-text,
 	.email-text {
 		font-size: 18px;
+		color: white;
+		text-decoration: none;
 	}
 	.ph-no-icon img,
 	.email-icon img {
@@ -260,11 +311,73 @@
 		cursor: pointer;
 		border-radius: 10px;
 		transition: 0.3s;
+		text-decoration: none;
 	}
 	.contact-btn:hover {
 		background-color: #90b3bb;
 	}
-
+	.contact-form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 32px 16px;
+		background-color: #f5f5f5;
+	}
+	.contact-form-heading {
+		color: #91c1cc;
+		font-size: 24px;
+		text-align: center;
+	}
+	.contact-form-intro {
+		margin-top: 16px;
+		margin-left: 8px;
+		margin-right: 8px;
+		margin-bottom: 6px;
+		color: black;
+		font-size: 20px;
+	}
+	.contact-info-wrapper {
+		width: calc(100vw - 48px);
+		margin-bottom: 8px;
+	}
+	.contact-text-alt {
+		font-size: 16px;
+		color: black;
+	}
+	.contact-input {
+		width: calc(100vw - 48px);
+		height: 50px;
+		margin-top: 16px;
+		border: 2px solid #656565;
+		padding: 16px 12px;
+		border-radius: 8px;
+	}
+	.contact-textarea {
+		margin-top: 16px;
+		width: calc(100vw - 48px);
+		height: 150px;
+		border: 2px solid #656565;
+		padding: 16px 12px;
+		border-radius: 8px;
+	}
+	.submit-wrapper {
+		width: 100%;
+	}
+	.contact-submit {
+		padding: 12px 64px;
+		color: white;
+		background-color: #91c1cc;
+		font-size: 20px;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		margin-top: 16px;
+		border-radius: 8px;
+		transition: 0.3s;
+	}
+	.contact-submit:hover {
+		background-color: #90b3bb;
+	}
 	.footer-wrapper {
 		padding: 48px 32px;
 		background-color: #5b5151;
@@ -301,6 +414,8 @@
 		flex-direction: row;
 		gap: 12px;
 		cursor: pointer;
+		align-items: center;
+		text-decoration: none;
 	}
 	.contact-icon {
 		width: 24px;

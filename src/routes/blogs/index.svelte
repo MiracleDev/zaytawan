@@ -25,17 +25,17 @@
 
 	const open = () => {
 		toggle = true;
-	}
+	};
 
 	const close = () => {
 		toggle = false;
-	}
+	};
 </script>
 
 <div>
-  <div class="sidenav" style={toggle ? 'width: 100%' : 'width: 0'}>
+	<div class="sidenav" style={toggle ? 'width: 100%' : 'width: 0'}>
 		<div class="closebtn" on:click={close}>
-			<img src="/images/times-solid.svg" alt="closebtn">
+			<img src="/images/times-solid.svg" alt="closebtn" />
 		</div>
 		<a href="/">မူလစာမျက်နှာသို့</a>
 		<a href="/contact-us">ဆက်သွယ်ရန်</a>
@@ -47,13 +47,13 @@
 				<div class="ph-no-icon">
 					<img src="/images/phone.svg" alt="phone-icon" />
 				</div>
-				<div class="ph-no-text">၀၉-၇၉၈၆၄၆၁၅၁</div>
+				<a class="ph-no-text" href="tel:+959798646151">၀၉-၇၉၈၆၄၆၁၅၁</a>
 			</div>
 			<div class="email">
 				<div class="email-icon">
 					<img src="/images/echo.svg" alt="email-icon" />
 				</div>
-				<div class="email-text">testing@gmail.com</div>
+				<a class="email-text" href="mailto: testing@gmail.com">testing@gmail.com</a>
 			</div>
 		</div>
 		<div class="heading-content">
@@ -114,31 +114,31 @@
 					ပင်ရင်း တ၂/၄၊၆၃လမ်း၆၄လမ်းကြား၊၁၀၂လမ်း(ယခင်ပိတောက်လမ်း)၊ မြို့သစ်၊မန္တလေးမြို့။
 				</div>
 			</div>
-			<div class="contact-info-alt">
+			<a href="tel:+959798646151" class="contact-info-alt">
 				<div class="contact-icon">
 					<img src="/images/phone-alt.svg" alt="" />
 				</div>
 				<div class="contact-text">၀၉-၇၉၈၆၄၆၁၅၁</div>
-			</div>
-			<div class="contact-info-alt">
+			</a>
+			<a href="mailto:testing@gmail.com" class="contact-info-alt">
 				<div class="contact-icon">
 					<img src="/images/echo-alt.svg" alt="" />
 				</div>
 				<div class="contact-text">testing@gmail.com</div>
-			</div>
-			<div class="contact-info-alt">
+			</a>
+			<a href="https://www.facebook.com/dawmyanwezaytawon" target="_blank" class="contact-info-alt">
 				<div class="contact-icon">
 					<img src="/images/message.svg" alt="" />
 				</div>
 				<div class="contact-text">Facebook</div>
-			</div>
+			</a>
 		</div>
 		<div class="copyright">Design & Developed by MiracleDev</div>
 	</footer>
 </div>
 
 <style>
-  .sidenav {
+	.sidenav {
 		height: 100%;
 		width: 0;
 		position: fixed;
@@ -152,8 +152,8 @@
 		text-align: center;
 		transition: 0.3s;
 		background-color: #91c1cc;
-    	background-image: url(/images/waves.webp);
-    	background-blend-mode: lighten;
+		background-image: url(/images/waves.webp);
+		background-blend-mode: lighten;
 	}
 
 	.sidenav a {
@@ -179,12 +179,12 @@
 		margin-left: 50px;
 		cursor: pointer;
 	}
-	.closebtn img{
+	.closebtn img {
 		width: 24px;
 		height: 24px;
 		object-fit: cover;
 	}
-  .break-line {
+	.break-line {
 		border: none;
 		border-bottom: 6px solid #91c1cc;
 		width: 100%;
@@ -222,6 +222,8 @@
 	.ph-no-text,
 	.email-text {
 		font-size: 18px;
+		color: white;
+		text-decoration: none;
 	}
 	.ph-no-icon img,
 	.email-icon img {
@@ -306,6 +308,7 @@
 		cursor: pointer;
 		border-radius: 10px;
 		transition: 0.3s;
+		text-decoration: none;
 	}
 	.contact-btn:hover {
 		background-color: #90b3bb;
@@ -315,6 +318,7 @@
 		flex-direction: column;
 		cursor: pointer;
 		transition: 0.3s;
+		text-decoration: none;
 	}
 	.blog-wrapper:hover {
 		filter: brightness(80%);
@@ -379,6 +383,8 @@
 		flex-direction: row;
 		gap: 12px;
 		cursor: pointer;
+		align-items: center;
+		text-decoration: none;
 	}
 	.contact-icon {
 		width: 24px;
