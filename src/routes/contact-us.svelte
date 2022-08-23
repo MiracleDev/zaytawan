@@ -31,7 +31,7 @@
 				<div class="email-icon">
 					<img src="/images/echo.svg" alt="email-icon" />
 				</div>
-				<a class="email-text" href="mailto: zaytawan.fb@gmail.com">zaytawan.fb@gmail.com</a>
+				<a class="email-text" target="_blank" href="mailto: zaytawan.fb@gmail.com">zaytawan.fb@gmail.com</a>
 			</div>
 		</div>
 		<div class="heading-content">
@@ -76,7 +76,7 @@
 					</div>
 					<div class="contact-text-alt">၀၉-၇၉၈၆၄၆၁၅၁</div>
 				</a>
-				<a href="mailto:zaytawan.fb@gmail.com" class="contact-info-alt">
+				<a target="_blank" href="mailto:zaytawan.fb@gmail.com" class="contact-info-alt">
 					<div class="contact-icon">
 						<img src="/images/echo-alt.svg" alt="" />
 					</div>
@@ -128,7 +128,7 @@
 				</div>
 				<div class="contact-text">၀၉-၇၉၈၆၄၆၁၅၁</div>
 			</a>
-			<a href="mailto:zaytawan.fb@gmail.com" class="contact-info-alt">
+			<a target="_blank" href="mailto:zaytawan.fb@gmail.com" class="contact-info-alt">
 				<div class="contact-icon">
 					<img src="/images/echo-alt.svg" alt="" />
 				</div>
