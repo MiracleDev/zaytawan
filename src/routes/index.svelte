@@ -169,7 +169,7 @@
 			</div>
 			<hr class="break-line" />
 			<div class="kettle-icon">
-				<img src="/images/kettle.webp" alt="" />
+				<img src="/images/kettle.svg" alt="" />
 			</div>
 			<div class="extra-info-heading">
 				ဇေတဝန်ဆေးတိုက်က<br />
@@ -203,12 +203,13 @@
 					ပင်ရင်း တ၂/၄၊၆၃လမ်း၆၄လမ်းကြား၊၁၀၂လမ်း(ယခင်ပိတောက်လမ်း)၊ မြို့သစ်၊မန္တလေးမြို့။
 				</div>
 			</div>
-			<a href="tel:+959798646151" class="contact-info-alt">
+			<div class="contact-info-alt">
 				<div class="contact-icon">
 					<img src="/images/phone-alt.svg" alt="" />
 				</div>
-				<div class="contact-text">၀၉-၇၉၈၆၄၆၁၅၁</div>
-			</a>
+				<a href="tel:+959798646151" class="contact-text">၀၉-၇၉၈၆၄၆၁၅၁,</a>
+				<a href="tel:+959402613512" class="contact-text">၀၉-၄၀၂၆၁၃၅၁၂</a>
+			</div>
 			<a href="mailto:zaytawan.fb@gmail.com" target="_blank" class="contact-info-alt">
 				<div class="contact-icon">
 					<img src="/images/echo-alt.svg" alt="" />
@@ -240,7 +241,7 @@
 		padding-top: 60px;
 		text-align: center;
 		transition: 0.3s;
-		background-color: #91c1cc;
+		background-color: #417885;
 		background-image: url(/images/waves.webp);
 		background-blend-mode: lighten;
 	}
@@ -255,7 +256,7 @@
 	}
 
 	.sidenav a:hover {
-		color: #818181;
+		color: #d4d1d1;
 	}
 
 	.closebtn {
@@ -276,7 +277,7 @@
 	.contact-info {
 		width: 100%;
 		height: 48px;
-		background-color: #91c1cc;
+		background-color: #417885;
 		color: #ffffff;
 		display: flex;
 		flex-direction: row;
@@ -367,17 +368,17 @@
 	.line1 {
 		width: 20px;
 		height: 4px;
-		background-color: #d9d9d9;
+		background-color: #417885;
 	}
 	.line2 {
 		width: 32px;
 		height: 4px;
-		background-color: #d9d9d9;
+		background-color: #417885;
 	}
 	.line3 {
 		width: 24px;
 		height: 4px;
-		background-color: #d9d9d9;
+		background-color: #417885;
 	}
 	.contact-btn {
 		display: flex;
@@ -388,20 +389,20 @@
 		width: 318px;
 		height: 48px;
 		margin-top: 16px;
-		background-color: #91c1cc;
+		background-color: #417885;
 		cursor: pointer;
 		border-radius: 10px;
 		transition: 0.3s;
 		text-decoration: none;
 	}
 	.contact-btn:hover {
-		background-color: #90b3bb;
+		background-color: #5B929E;
 	}
 	.intro {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		background-color: #f5f5f5;
+		background-color: white;
 	}
 	.intro-image {
 		width: 100%;
@@ -415,7 +416,7 @@
 	.intro-heading {
 		margin-top: 16px;
 		font-size: 32px;
-		color: #91c1cc;
+		color: #417885;
 		text-align: center;
 	}
 	.intro-text {
@@ -430,14 +431,14 @@
 		cursor: pointer;
 		border-radius: 8px;
 		padding: 15px 45px;
-		background-color: #91c1cc;
+		background-color: #417885;
 		font-size: 18px;
-		color: #f5f5f5;
+		color: white;
 		transition: 0.3s;
 		text-decoration: none;
 	}
 	.blogs-btn:hover {
-		background-color: #90b3bb;
+		background-color: #5B929E;
 	}
 	.more-info {
 		display: flex;
@@ -446,7 +447,7 @@
 		align-items: center;
 		padding: 16px 24px;
 		gap: 12px;
-		background-color: #91c1cc;
+		background-color: #417885;
 	}
 	.more-info-text {
 		font-size: 20px;
@@ -476,7 +477,7 @@
 		margin-right: 16px;
 		margin-left: 16px;
 		font-size: 32px;
-		color: #91c1cc;
+		color: #417885;
 	}
 	.blog-intro {
 		margin-right: 16px;
@@ -491,7 +492,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		background-color: #91c1cc;
+		background-color: #417885;
 		background-image: url('/images/waves.webp');
 		background-blend-mode: lighten;
 	}
@@ -571,7 +572,7 @@
 	}
 	.thanks-heading {
 		font-size: 24px;
-		color: #91c1cc;
+		color: #417885;
 		margin-top: 16px;
 		text-align: center;
 	}
@@ -590,7 +591,7 @@
 	}
 	.break-line {
 		border: none;
-		border-bottom: 6px solid #91c1cc;
+		border-bottom: 6px solid #417885;
 		width: 100%;
 	}
 	.kettle-icon {
@@ -606,7 +607,7 @@
 	}
 	.extra-info-heading {
 		font-size: 24px;
-		color: #91c1cc;
+		color: #417885;
 		margin-top: 16px;
 		text-align: center;
 	}
@@ -620,7 +621,7 @@
 	}
 	.extra-info-btn {
 		padding: 15px 45px;
-		background-color: #91c1cc;
+		background-color: #417885;
 		color: white;
 		font-size: 18px;
 		margin-top: 16px;
@@ -631,11 +632,11 @@
 		text-decoration: none;
 	}
 	.extra-info-btn:hover {
-		background-color: #90b3bb;
+		background-color: #5B929E;
 	}
 	.footer-wrapper {
 		padding: 48px 32px;
-		background-color: #5b5151;
+		background-color: #1f1f1f;
 	}
 	.logo-alt {
 		width: 70px;
@@ -650,7 +651,7 @@
 	}
 	.footer-text1 {
 		margin-top: 32px;
-		color: #dad5d5;
+		color: white;
 		font-size: 20px;
 	}
 	.footer-text2 {
@@ -682,11 +683,12 @@
 		object-fit: cover;
 	}
 	.contact-text {
+		text-decoration: none;
 		font-size: 16px;
-		color: #dad5d5;
+		color: white;
 	}
 	.copyright {
-		background-color: #1f1f1f;
+		background-color: #417885;
 		color: white;
 		font-size: 16px;
 		padding: 16px 32px;

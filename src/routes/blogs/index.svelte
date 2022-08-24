@@ -114,12 +114,13 @@
 					ပင်ရင်း တ၂/၄၊၆၃လမ်း၆၄လမ်းကြား၊၁၀၂လမ်း(ယခင်ပိတောက်လမ်း)၊ မြို့သစ်၊မန္တလေးမြို့။
 				</div>
 			</div>
-			<a href="tel:+959798646151" class="contact-info-alt">
+			<div class="contact-info-alt">
 				<div class="contact-icon">
 					<img src="/images/phone-alt.svg" alt="" />
 				</div>
-				<div class="contact-text">၀၉-၇၉၈၆၄၆၁၅၁</div>
-			</a>
+				<a href="tel:+959798646151" class="contact-text">၀၉-၇၉၈၆၄၆၁၅၁,</a>
+				<a href="tel:+959402613512" class="contact-text">၀၉-၄၀၂၆၁၃၅၁၂</a>
+			</div>
 			<a target="_blank" href="mailto:zaytawan.fb@gmail.com" class="contact-info-alt">
 				<div class="contact-icon">
 					<img src="/images/echo-alt.svg" alt="" />
@@ -151,11 +152,10 @@
 		padding-top: 60px;
 		text-align: center;
 		transition: 0.3s;
-		background-color: #91c1cc;
+		background-color: #417885;
 		background-image: url(/images/waves.webp);
 		background-blend-mode: lighten;
 	}
-
 	.sidenav a {
 		padding: 8px 8px 8px 32px;
 		text-decoration: none;
@@ -164,11 +164,9 @@
 		display: block;
 		transition: 0.3s;
 	}
-
 	.sidenav a:hover {
-		color: #818181;
+		color: #d4d1d1;
 	}
-
 	.closebtn {
 		width: 24px;
 		height: 24px;
@@ -186,13 +184,13 @@
 	}
 	.break-line {
 		border: none;
-		border-bottom: 6px solid #91c1cc;
+		border-bottom: 6px solid #417885;
 		width: 100%;
 	}
 	.contact-info {
 		width: 100%;
 		height: 48px;
-		background-color: #91c1cc;
+		background-color: #417885;
 		color: #ffffff;
 		display: flex;
 		flex-direction: row;
@@ -283,17 +281,17 @@
 	.line1 {
 		width: 20px;
 		height: 4px;
-		background-color: #d9d9d9;
+		background-color: #417885;
 	}
 	.line2 {
 		width: 32px;
 		height: 4px;
-		background-color: #d9d9d9;
+		background-color: #417885;
 	}
 	.line3 {
 		width: 24px;
 		height: 4px;
-		background-color: #d9d9d9;
+		background-color: #417885;
 	}
 	.contact-btn {
 		display: flex;
@@ -304,14 +302,14 @@
 		width: 318px;
 		height: 48px;
 		margin-top: 16px;
-		background-color: #91c1cc;
+		background-color: #417885;
 		cursor: pointer;
 		border-radius: 10px;
 		transition: 0.3s;
 		text-decoration: none;
 	}
 	.contact-btn:hover {
-		background-color: #90b3bb;
+		background-color: #5B929E;
 	}
 	.blog-wrapper {
 		display: flex;
@@ -337,7 +335,7 @@
 		margin-right: 16px;
 		margin-left: 16px;
 		font-size: 32px;
-		color: #91c1cc;
+		color: #417885;
 	}
 	.blog-intro {
 		margin-right: 16px;
@@ -349,7 +347,7 @@
 	}
 	.footer-wrapper {
 		padding: 48px 32px;
-		background-color: #5b5151;
+		background-color: #1f1f1f;
 	}
 	.logo-alt {
 		width: 70px;
@@ -364,7 +362,7 @@
 	}
 	.footer-text1 {
 		margin-top: 32px;
-		color: #dad5d5;
+		color: white;
 		font-size: 20px;
 	}
 	.footer-text2 {
@@ -396,11 +394,12 @@
 		object-fit: cover;
 	}
 	.contact-text {
+		text-decoration: none;
 		font-size: 16px;
-		color: #dad5d5;
+		color: white;
 	}
 	.copyright {
-		background-color: #1f1f1f;
+		background-color: #417885;
 		color: white;
 		font-size: 16px;
 		padding: 16px 32px;
