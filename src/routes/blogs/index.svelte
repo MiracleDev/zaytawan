@@ -219,7 +219,7 @@
 	}
 	.ph-no-text,
 	.email-text {
-		font-size: 18px;
+		font-size: 16px;
 		color: white;
 		text-decoration: none;
 	}

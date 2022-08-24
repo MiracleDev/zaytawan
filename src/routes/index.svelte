@@ -307,7 +307,7 @@
 	.ph-no-text,
 	.email-text {
 		color: white;
-		font-size: 18px;
+		font-size: 16px;
 		text-decoration: none;
 	}
 	.ph-no-icon img,
