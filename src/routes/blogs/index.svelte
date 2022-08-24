@@ -134,7 +134,9 @@
 				<div class="contact-text">Facebook</div>
 			</a>
 		</div>
-		<div class="copyright">Design & Developed by MiracleDev</div>
+		<div class="copyright">
+			<a target="_blank" href="https://www.facebook.com/profile.php?id=100084491599080" class="copyright-text">Designed & Developed by MiracleDev</a>
+		</div>
 	</footer>
 </div>
 
@@ -400,8 +402,11 @@
 	}
 	.copyright {
 		background-color: #417885;
-		color: white;
 		font-size: 16px;
 		padding: 16px 32px;
+	}
+	.copyright-text{
+		text-decoration: none;
+		color: white;
 	}
 </style>
